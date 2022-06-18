@@ -11,7 +11,8 @@ const Bootcamp = require("./models/Bootcamp");
 const Course = require("./models/Course");
 
 // Connect to DB
-mongoose.connect(process.env.MONGO_URI);
+// mongoose.connect(process.env.MONGO_URI);
+mongoose.connect(process.env.MONGO_URI_LOCAL);
 
 // Read JSON files
 const bootcamps = JSON.parse(
